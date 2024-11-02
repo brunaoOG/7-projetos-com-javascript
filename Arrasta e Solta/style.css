@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Sancreek&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans";
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191919;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.neutralArea {
+  width: 450px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid #fff;
+}
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+.item.dragging {
+  opacity: 0.5;
+}
+.areas {
+  width: 450px;
+  display: flex;
+  margin-top: 20px;
+}
+.areas.correct .area {
+  border: 2px solid #00ff00;
+}
+.area {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
